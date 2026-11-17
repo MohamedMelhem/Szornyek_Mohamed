@@ -38,6 +38,7 @@ namespace Szornyek_Mohamed
             {
                 egyediElohelyek.Add(szorny.Elohely);
             }
+            //egyediElohelyek.OrderByDescending(s => s.Elohely);
             return egyediElohelyek;
         }
         public double AtlagosVeszelyessegSzint()

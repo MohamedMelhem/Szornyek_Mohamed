@@ -8,9 +8,9 @@ namespace Szornyek_Mohamed
 
     internal class SzornyAdatbazis
     {
-        private readonly string connectionString = "Server=localhost;Database=szornyek;User Id=root;Password=;";
+        private readonly string connectionString = "Server=localhost;Database=fantasybestariumdb;User Id=root;Password=;";
 
-        public List<Szorny> AdatokBetoltese()
+        public List<Szorny> Feltolt()
         {
             var szornyek = new List<Szorny>();
 
@@ -29,7 +29,7 @@ namespace Szornyek_Mohamed
 
                                     reader.GetInt32("Id"),
                                     reader.GetString("Nev"),
-                                    reader.GetInt32("VeszelyessegSzint"),
+                                    reader.GetInt32("VeszelyessegiSzint"),
                                     reader.GetString("Elohely"),
                                     reader.GetString("FoGyengeseg"),
                                     reader.GetString("LeggyakoribbZsakmany"),
